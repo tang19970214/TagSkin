@@ -5,7 +5,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-    publicPath: "/TagSkin/",
+    publicPath: "/TagSkin/dist",
     lintOnSave: process.env.NODE_ENV !== "production",
     devServer: {
         // port: 1803, // 端口
