@@ -28,6 +28,16 @@ const routes = [{
     name: 'lotion',
     component: () => import('../views/product/lotion.vue')
   },
+  {
+    path: '/essence',
+    name: 'essence',
+    component: () => import('../views/product/essence.vue')
+  },
+  {
+    path: '/remover',
+    name: 'remover',
+    component: () => import('../views/product/remover.vue')
+  },
 ]
 
 const router = new VueRouter({

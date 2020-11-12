@@ -13,7 +13,10 @@
             v-for="(item, index) in menuList"
             :key="'ML_' + index"
           >
-            <router-link class="text-decoration-none" :to="item.pathName">
+            <router-link
+              class="text-decoration-none"
+              :to="{ name: item.pathName }"
+            >
               <p class="m-0">{{ item.name }}</p>
             </router-link>
           </div>
@@ -43,6 +46,14 @@ export default {
         {
           pathName: "lotion",
           name: "機能水",
+        },
+        {
+          pathName: "essence",
+          name: "絲絨精萃",
+        },
+        {
+          pathName: "remover",
+          name: "卸妝露",
         },
       ],
     };
