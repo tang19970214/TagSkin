@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="titlebar w-100 d-flex align-items-center flex-row">
+    <div class="titlebar w-100 d-flex align-items-center flex-row pos-fixed">
       <router-link class="ml-10" to="/">
         <img src="../assets/images/BigLOGO.png" alt="LOGO" width="150px" />
       </router-link>
@@ -65,7 +65,9 @@ export default {
 .titlebar {
   width: 100%;
   height: 65px;
+  background: white;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  z-index: 999;
   &-menu {
     &_list {
       border-right: 1px solid #d3d3d3;

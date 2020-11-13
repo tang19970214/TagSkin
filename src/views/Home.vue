@@ -82,26 +82,14 @@
       />
     </div>
 
-    <!-- introduce -->
-    <div class="w-100 mt-80">
-      <div class="px-20">
-        <el-divider></el-divider>
-      </div>
-
-      <div
-        class="introduce w-100 my-50 d-flex align-items-center justify-content-start"
-      >
-        <ul class="m-0 pl-50 list-none">
-          <li
-            class="text-left"
-            v-for="(item, index) in introduceList"
-            :key="'IL_' + index"
-          >
-            {{ item.context }}
-          </li>
-        </ul>
-      </div>
+    <div class="w-100 mt-10">
+      <img
+        src="https://shoplineimg.com/5f130afa1eda70002741b159/5f1554bf3a9aca00450286d7/1000x.webp?source_format=jpg"
+        alt=""
+        width="100%"
+      />
     </div>
+
   </div>
 </template>
 
@@ -173,20 +161,6 @@ export default {
             "https://shopee.tw/%F0%9F%8C%9F%E8%A3%B8%E5%85%89%E4%BB%99%E4%BA%BA%E6%8E%8C%E5%8D%B8%E5%A6%9D%E9%9C%B2%F0%9F%8C%B5-i.4237735.4454334619",
         },
       ],
-      introduceList: [
-        {
-          context: "｜以肌之名生技有限公司",
-        },
-        {
-          context: "｜電子信箱：a0983322299@gmail.com",
-        },
-        {
-          context: "｜LINE帳號：line051620",
-        },
-        {
-          context: "｜客服時間：每日 09:00-20:00",
-        },
-      ],
     };
   },
   methods: {
@@ -224,12 +198,5 @@ export default {
     }
   }
 
-  .introduce {
-    ul {
-      li {
-        color: rgb(136, 136, 136);
-      }
-    }
-  }
 }
 </style>
